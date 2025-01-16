@@ -1,9 +1,3 @@
-**ABSTRACT**
-
-Process scheduling stands as a fundamental component in modern operating systems, determining how CPU resources are allocated among competing processes. This study presents a comparative analysis between the default Linux Scheduler (SCHED_OTHER) and our implemented Fair Share Scheduler within the Linux kernel, focusing on their effectiveness in managing CPU time distribution.
-
-The default Linux scheduler employs a time-sharing approach, where processes receive CPU time based on dynamic priority calculations. In contrast, the Fair Share Scheduler introduces a user-centric approach, ensuring equitable resource distribution by first allocating CPU time among users, then among their respective processes.
-
 1\. **INTRODUCTION**
 
 Process scheduling is a critical function in operating systems, determining how processes are assigned to run on available CPUs. The default Linux scheduler (SCHED_OTHER) uses a time-sharing approach, ensuring fairness by dynamically adjusting process priorities. This project explores the implementation of an alternative scheduling algorithm, the Fair Share Scheduler, which proportionally allocates CPU time among users or groups, ensuring that each entity receives its designated share of processing resources.
