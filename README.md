@@ -1,3 +1,5 @@
+# Fair-Share Scheduler for Linux Kernel 2.4
+
 1\. **INTRODUCTION**
 
 Process scheduling is a critical function in operating systems, determining how processes are assigned to run on available CPUs. The default Linux scheduler (SCHED_OTHER) uses a time-sharing approach, ensuring fairness by dynamically adjusting process priorities. This project explores the implementation of an alternative scheduling algorithm, the Fair Share Scheduler, which proportionally allocates CPU time among users or groups, ensuring that each entity receives its designated share of processing resources.
